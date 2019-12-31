@@ -24,3 +24,6 @@ Perform the following steps to run this example:
 
 For a step-by-step tutorial, refer to the
 [Document Viewer Integration in React](https://docs.devexpress.com/XtraReports/119338) topic.
+
+<b>See also:</b>
+* [How to Use the Report Designer in JavaScript with React Library and Npm Package Manager](https://github.com/DevExpress-Examples/reporting-eud-designer-in-javascript-with-react)
