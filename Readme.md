@@ -1,4 +1,4 @@
-# How to use the Document Viewer in JavaScript with React Library
+# How to Use the Document Viewer in JavaScript with React Library and Npm Package Manager
 
 This example consists of two parts: 
 
