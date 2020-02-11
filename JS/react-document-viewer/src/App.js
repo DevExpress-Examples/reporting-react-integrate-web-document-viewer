@@ -9,7 +9,10 @@ class ReportViewer extends React.Component {
     this.reportUrl = ko.observable("Products");
     this.requestOptions = {
       host: "http://localhost:54114/",
+      // Use this line for the ASP.NET MVC backend.
       invokeAction: "/WebDocumentViewer/Invoke"
+      // Use this line for the ASP.NET Core backend
+      //invokeAction: "DXXRDV"
     };
   }
   render() {
