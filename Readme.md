@@ -25,7 +25,7 @@ Perform the following steps to run this example:
 
 5. The client application opens the browser at http://localhost:3000/. It displays the **Document Viewer** with the **Products** report.
 
-![](images/screenshot.png)
+    ![Document Viewer in JavaScript with React](images/screenshot.png)
 
 For a step-by-step tutorial, refer to the
 [Document Viewer Integration in React](https://docs.devexpress.com/XtraReports/119338) topic.
