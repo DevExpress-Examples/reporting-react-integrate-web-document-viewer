@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "devextreme": "^22.1.3",
-    "@devexpress/analytics-core": "^22.1.3",
-    "devexpress-reporting": "^22.1.3",
+    "devextreme": "22.1-next",
+    "@devexpress/analytics-core": "22.1-next",
+    "devexpress-reporting": "22.1-next",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
