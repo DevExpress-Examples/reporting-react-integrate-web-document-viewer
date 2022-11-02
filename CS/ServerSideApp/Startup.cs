@@ -45,7 +45,6 @@ namespace ServerSideApp {
                     builder.SetIsOriginAllowed(origin => new Uri(origin).Host == "localhost");
                     builder.AllowAnyHeader();
                     builder.AllowAnyMethod();
-                    builder.WithHeaders("Content-Type");
                 });
             });
         }
