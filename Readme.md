@@ -1,8 +1,3 @@
-<!-- default badges list -->
-![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/229755307/22.1.3%2B)
-[![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T848272)
-[![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
-<!-- default badges end -->
 # Reporting for Web (React) - Document Viewer
 
 This example consists of two parts: 
@@ -25,7 +20,7 @@ Perform the following steps to run this example:
 
 5. The client application opens the browser at http://localhost:3000/. It displays the **Document Viewer** with the **TestReport** report.
 
-    ![Document Viewer in JavaScript with React](images/screenshot.png)
+    ![Document Viewer in JavaScript with React](Images/screenshot.png)
 
 ## Files to Review
 
