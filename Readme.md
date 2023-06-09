@@ -28,7 +28,7 @@ Perform the following steps to run this example:
 
 ## Files to Review
 
-- [App.js](JS\react-document-viewer\src\App.js)
+- [App.js](JS/react-document-viewer/src/App.js)
 
 ## Documentation
 
