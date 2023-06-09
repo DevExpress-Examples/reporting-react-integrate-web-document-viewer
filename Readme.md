@@ -1,8 +1,3 @@
-<!-- default badges list -->
-![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/229755307/2022.2)
-[![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T848272)
-[![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
-<!-- default badges end -->
 # Reporting for Web (React) - Document Viewer
 
 This example consists of two parts: 
@@ -13,8 +8,8 @@ This example consists of two parts: 
 
 Perform the following steps to run this example:
 
-1. Open the back-end project solution (**CS\ServerSideApp.sln**) in Visual Studio and run the project.
-2. Navigate to the **JS\react-document-viewer** folder that is the client part's root folder.
+1. Open the back-end project solution (**CS/ServerSideApp.sln**) in Visual Studio and run the project.
+2. Navigate to the **JS/react-document-viewer** folder that is the client part's root folder.
 3. Open the console and run the following command:
 
     ```npm install```
@@ -29,7 +24,7 @@ Perform the following steps to run this example:
 
 ## Files to Review
 
-- [App.js](JS\react-document-viewer\src\App.js)
+- [App.js](JS/react-document-viewer/src/App.js)
 
 ## Documentation
 
