@@ -4,7 +4,7 @@
 <!-- default badges end -->
 # Reporting for Web (React) - Document Viewer
 
-This example consists of two parts: 
+This example consists of two parts:
 
 - A server (back-end) ASP.NET Core application that enables [cross-domain requests (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) (Access-Control-Allow-Origin) and implements a custom web report storage.
 
@@ -24,7 +24,7 @@ Perform the following steps to run this example:
 
 5. The client application opens the browser at http://localhost:3000/. It displays the **Document Viewer** with the **TestReport** report.
 
-    ![Document Viewer in JavaScript with React](images/screenshot.png)
+    ![Document Viewer in JavaScript with React](Images/screenshot.png)
 
 ## Files to Review
 

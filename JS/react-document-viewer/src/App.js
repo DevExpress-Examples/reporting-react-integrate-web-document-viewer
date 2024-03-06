@@ -1,35 +1,27 @@
-import React from 'react';
-import ko from 'knockout';
-import 'devexpress-reporting/dx-webdocumentviewer';
 import './App.css';
+import { useEffect, useRef } from 'react';
+import { DxReportViewer } from 'devexpress-reporting/dx-webdocumentviewer';
+import * as ko from 'knockout';
 
-class ReportViewer extends React.Component {
-  constructor(props) {
-    super(props);
-    this.reportUrl = ko.observable("TestReport");
-    this.requestOptions = {
-      host: "http://localhost:54114/",
-      invokeAction: "DXXRDV"
-    };
-  }
-  render() {
-    return (<div ref="viewer" data-bind="dxReportViewer: $data"></div>);
-  }
-  componentDidMount() {
-    ko.applyBindings({
-      reportUrl: this.reportUrl,
-      requestOptions: this.requestOptions
-    }, this.refs.viewer);
-  }
-  componentWillUnmount() {
-    ko.cleanNode(this.refs.viewer);
-  }
-};
+const ReportViewer = () => {
+  const reportUrl = ko.observable("TestReport");
+  const viewerRef = useRef();
+  const requestOptions = {
+    host: "https://localhost:54114/",
+    invokeAction: "DXXRDV"
+  };
+  useEffect(() => {
+    const viewer = new DxReportViewer(viewerRef.current, { reportUrl, requestOptions });
+    viewer.render(); 
+    return () => viewer.dispose();
+  })
+  return (<div ref={viewerRef}></div>);
+}
 
 function App() {
   return (<div style={{ width: "100%", height: "1000px" }}>
-    <ReportViewer />
+      <ReportViewer />
   </div>);
-}
+  }
 
 export default App;

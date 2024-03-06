@@ -26,7 +26,7 @@ namespace ServerSideApp.Controllers {
             return View(model);
         }
 
-         public static Dictionary<string, object> GetAvailableDataSources() {
+        public static Dictionary<string, object> GetAvailableDataSources() {
             var dataSources = new Dictionary<string, object>();
             return dataSources;
         }
