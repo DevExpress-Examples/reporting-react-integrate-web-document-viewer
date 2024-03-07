@@ -15,8 +15,8 @@ This example shows how to incorporate the Web Document Viewer into a client-side
 
 Perform the following steps to run this example:
 
-1. Open the back-end project solution (**ServerSideApp.sln**) in Visual Studio and run the project.
-2. Navigate to the **Jreact-document-viewer** folder that is the client part's root folder.
+1. Open the back-end project solution (*ServerSideApp/ServerSideApp.sln*) in Visual Studio and run the project.
+2. Navigate to the *react-document-viewer* folder that is the client part's root folder.
 3. Open the console and run the following command:
 
     ```npm install```
@@ -31,7 +31,7 @@ Perform the following steps to run this example:
 
 ## Files to Review
 
-- [App.js](JS/react-document-viewer/src/App.js)
+- [App.js](react-document-viewer/src/App.js)
 
 ## Documentation
 
