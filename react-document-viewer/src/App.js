@@ -7,7 +7,7 @@ const ReportViewer = () => {
   const reportUrl = ko.observable("TestReport");
   const viewerRef = useRef();
   const requestOptions = {
-    host: "https://localhost:54114/",
+    host: "https://localhost:62359/",
     invokeAction: "DXXRDV"
   };
   useEffect(() => {
