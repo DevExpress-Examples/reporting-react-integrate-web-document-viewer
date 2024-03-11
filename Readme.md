@@ -27,7 +27,10 @@ Perform the following steps to run this example:
 
 5. The client application opens the browser at http://localhost:3000/. It displays the **Document Viewer** with the **TestReport** report.
 
-    ![Document Viewer in JavaScript with React](Images/screenshot.png)
+> [!TIP]
+> Make sure that the backend application runs on the port specified in the host setting of the Document Viewer component. For more information, refer to the following help topic: [Determine the Host URL](https://docs.devexpress.com/XtraReports/400197/web-reporting/asp-net-core-reporting/server-side-configuration/document-viewer-server-side-configuration-asp-net-core#step-3-determine-the-host-url).
+
+![Document Viewer in JavaScript with React](Images/screenshot.png)
 
 ## Files to Review
 
