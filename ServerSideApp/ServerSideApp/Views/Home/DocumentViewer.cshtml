@@ -1,11 +1,8 @@
-﻿@using ServerSideApp.PredefinedReports
-@using ServerSideApp.Models
-@model ViewerModel
-
+﻿@model DevExpress.XtraReports.Web.WebDocumentViewer.WebDocumentViewerModel
 @{
     var viewerRender = Html.DevExpress().WebDocumentViewer("DocumentViewer")
         .Height("100%")
-        .Bind(Model.ViewerModelToBind);
+        .Bind(Model);
     @viewerRender.RenderHtml()
 }
 
