@@ -9,7 +9,7 @@ function App() {
 
 return (
   <ReportViewer reportUrl="TestReport">
-    <RequestSettings host="https://localhost:61766/" invokeAction="DXXRDV" />
+    <RequestSettings host="http://localhost:5000/" invokeAction="DXXRDV" />
   </ReportViewer>        
 )
 }
