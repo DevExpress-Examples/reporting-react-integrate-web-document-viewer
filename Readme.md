@@ -20,7 +20,7 @@ In the *ServerSideApp* folder run the following command:
 dotnet run
 ```
 
-The server starts at https://localhost:5001. To debug the server, run the application in Visual Studio.
+The server starts at http://localhost:5000. To debug the server, run the application in Visual Studio.
 
 ### Client
 
@@ -47,4 +47,5 @@ Open `http://localhost:3000/` in your browser to see the result. The application
 - [Document Viewer Server-Side Configuration (ASP.NET Core)](https://docs.devexpress.com/XtraReports/400197)
 
 ## More Examples
+
 * [Reporting for React - Integrate Report Designer in React App](https://github.com/DevExpress-Examples/reporting-eud-designer-in-javascript-with-react)
