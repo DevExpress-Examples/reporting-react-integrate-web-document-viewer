@@ -6,12 +6,11 @@ import '@devexpress/analytics-core/dist/css/dx-analytics.light.css';
 import 'devexpress-reporting/dist/css/dx-webdocumentviewer.css';
 
 function App() {
-
-return (
-  <ReportViewer reportUrl="TestReport">
-    <RequestSettings host="http://localhost:5000/" invokeAction="DXXRDV" />
-  </ReportViewer>        
-)
+  return (
+    <ReportViewer reportUrl="TestReport">
+      <RequestSettings host="http://localhost:5000/" invokeAction="DXXRDV" />
+    </ReportViewer>        
+  )
 }
 
 export default App
