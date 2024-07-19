@@ -11,13 +11,9 @@ namespace ServerSideApp.Controllers {
             return View(model);
         }
         
-
-        public IActionResult DocumentViewer(
-            [FromServices] IWebDocumentViewerClientSideModelGenerator viewerModelGenerator,
-            [FromQuery] string reportName) {
-            reportName = string.IsNullOrEmpty(reportName) ? "TestReport" : reportName;
-            var viewerModel = viewerModelGenerator.GetModel(reportName, CustomWebDocumentViewerController.DefaultUri);
-            return View(viewerModel);
+        public string [] GetData() {
+            string[] names = { "Alice", "Bob", "Charlie" };
+            return names;
         }
     }
 }

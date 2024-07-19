@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import 'devextreme/dist/css/dx.light.css';
+import '@devexpress/analytics-core/dist/css/dx-analytics.common.css';
+import '@devexpress/analytics-core/dist/css/dx-analytics.light.css';
+import 'devexpress-reporting/dist/css/dx-webdocumentviewer.css';
+
 
 const inter = Inter({ subsets: ["latin"] });
 

@@ -11,6 +11,7 @@ using DevExpress.AspNetCore;
 using DevExpress.AspNetCore.Reporting;
 using DevExpress.Security.Resources;
 using DevExpress.XtraReports.Web.Extensions;
+using DevExpress.XtraReports.Web.WebDocumentViewer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -21,6 +22,8 @@ using ServerSideApp.Data;
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDevExpressControls();
 builder.Services.AddScoped<ReportStorageWebExtension, CustomReportStorageWebExtension>();
+// Uncomment the following line if you run the Custom Export example.
+builder.Services.AddSingleton<WebDocumentViewerOperationLogger, MyOperationLogger>();
 builder.Services.AddMvc();
 builder.Services.ConfigureReportingServices(configurator => {
     if(builder.Environment.IsDevelopment()) {

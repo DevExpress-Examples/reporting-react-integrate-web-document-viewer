@@ -17,7 +17,7 @@ This example incorporates the Web Document Viewer into a client-side app built w
 
 ### Server
 
-In the *ServerSideApp* folder, run the following command:
+In the *ServerSideApp/ServerSideApp* folder, run the following command:
 
 
 ```
@@ -54,6 +54,31 @@ Open `http://localhost:3000/` in your browser to view the result. The applicatio
 ## More Examples
 
 * [Reporting for React - Integrate Report Designer in React App](https://github.com/DevExpress-Examples/reporting-eud-designer-in-javascript-with-react)
+
+## Customization Examples
+
+This project contains code snippets used for client-side customization and reflected in our online help topics. Each code snippet is enclosed in a `page.tsx` file in a separate folder. After running the project, open the following folders to see the result:
+
+| Location | Description |
+| --- | --- |
+| /customize-parameter-editor-options | Removes time part from a calendar editor in the Parameters panel. | 
+| /custom-parameter-lookup-source | Populates parameter editors with values obtained on the client. |
+| /property-changes-processing | Sets the zoom level to 25%, enables multi-page mode, and indicates the moment when the first page is loaded. |
+| /customize-export-options | Specifies the "&#124;"" symbol as a separator for CSV data export. |
+| /customize-export-toolbar-item | Adds a new `Image: JPEG` item in the Export drop-down menu and binds it to the `ExportTo` action.
+| /export-options-hide-format | Removes the `XLS` format from the **Export To** drop-down list and from the **Export Options** panel.
+| /custom-export-to-button | Hides the [Export Options panel](https://devexpress.github.io/dotnet-eud/reporting-for-web/articles/document-viewer/exporting/export-a-document.html), adds a button to export the report to a file in XLSX format, and specifies the `Author` export option. |
+| /get-parameters-model | Obtains values that the user selects in the multi-value parameter editor. | 
+| /get-preview-model | Collapses the tab panel when the user clicks **Reset** in the **Parameters** tab. |
+| /goto-next-page | Automatically navigates through the document pages. |
+| /open-report | Loads the specified report. |
+| /submit-parameters | Passes a parameter to the report and rebuilds the document. |
+| /parameters-events | Handles report parameter events. |
+
+
+
+
+
 <!-- feedback -->
 ## Does this example address your development requirements/objectives?
 
