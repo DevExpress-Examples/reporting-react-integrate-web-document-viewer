@@ -61,19 +61,20 @@ This project contains code snippets used for client-side customization and refle
 
 | Location | Description |
 | --- | --- |
-| /customize-parameter-editor-options | Removes time part from a calendar editor in the Parameters panel. | 
+| /custom-export-to-button | Hides the [Export Options panel](https://devexpress.github.io/dotnet-eud/reporting-for-web/articles/document-viewer/exporting/export-a-document.html), adds a button to export the report to a file in XLSX format, and specifies the `Author` export option. |
 | /custom-parameter-lookup-source | Populates parameter editors with values obtained on the client. |
-| /property-changes-processing | Sets the zoom level to 25%, enables multi-page mode, and indicates the moment when the first page is loaded. |
 | /customize-export-options | Specifies the "&#124;"" symbol as a separator for CSV data export. |
 | /customize-export-toolbar-item | Adds a new `Image: JPEG` item in the Export drop-down menu and binds it to the `ExportTo` action.
+| /customize-parameter-editor-options | Removes time part from a calendar editor in the Parameters panel. | 
 | /export-options-hide-format | Removes the `XLS` format from the **Export To** drop-down list and from the **Export Options** panel.
-| /custom-export-to-button | Hides the [Export Options panel](https://devexpress.github.io/dotnet-eud/reporting-for-web/articles/document-viewer/exporting/export-a-document.html), adds a button to export the report to a file in XLSX format, and specifies the `Author` export option. |
 | /get-parameters-model | Obtains values that the user selects in the multi-value parameter editor. | 
 | /get-preview-model | Collapses the tab panel when the user clicks **Reset** in the **Parameters** tab. |
 | /goto-next-page | Automatically navigates through the document pages. |
 | /open-report | Loads the specified report. |
-| /submit-parameters | Passes a parameter to the report and rebuilds the document. |
 | /parameters-events | Handles report parameter events. |
+| /property-changes-processing | Sets the zoom level to 25%, enables multi-page mode, and indicates the moment when the first page is loaded. |
+| /submit-parameters | Passes a parameter to the report and rebuilds the document. |
+
 
 
 
