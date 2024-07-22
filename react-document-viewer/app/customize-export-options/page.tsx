@@ -6,6 +6,8 @@ function App() {
   const onCustomizeExportOptions = ({ args }: { args: any }): void => {
     var model = args.GetExportOptionsModel(ExportFormatID.CSV);
     model.separator = '|';
+    args.HideProperties(ExportFormatID.XLS, "ExportMode", "PageRange");
+    args.HideProperties(ExportFormatID.XLSX);
   };
   return (
     <ReportViewer reportUrl="TestReport">

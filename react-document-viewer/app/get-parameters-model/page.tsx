@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-      <button onClick={getClientParameter}>Show First Parameter5 Value in Console</button>
+      <button onClick={getClientParameter}>Show the first Parameter5 item in the console</button>
       <ReportViewer ref={viewerRef} reportUrl="TestExportReport">
         <RequestOptions host="http://localhost:5000/" invokeAction="/DXXRDV" />
       </ReportViewer>

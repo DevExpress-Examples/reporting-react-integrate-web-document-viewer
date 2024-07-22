@@ -87,6 +87,7 @@
             this.pageInfo1 = new DevExpress.XtraReports.UI.XRPageInfo();
             this.pageInfo2 = new DevExpress.XtraReports.UI.XRPageInfo();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
+            this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
             this.label1 = new DevExpress.XtraReports.UI.XRLabel();
             this.GroupHeader1 = new DevExpress.XtraReports.UI.GroupHeaderBand();
             this.table1 = new DevExpress.XtraReports.UI.XRTable();
@@ -126,11 +127,13 @@
             this.DetailData3_Odd = new DevExpress.XtraReports.UI.XRControlStyle();
             this.PageInfo = new DevExpress.XtraReports.UI.XRControlStyle();
             this.parameter1 = new DevExpress.XtraReports.Parameters.Parameter();
-            this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
             this.parameter2 = new DevExpress.XtraReports.Parameters.Parameter();
             this.parameter3 = new DevExpress.XtraReports.Parameters.Parameter();
             this.parameter4 = new DevExpress.XtraReports.Parameters.Parameter();
             this.parameter5 = new DevExpress.XtraReports.Parameters.Parameter();
+            this.parameterDateRange = new DevExpress.XtraReports.Parameters.Parameter();
+            this.parameterDateRange_Start = new DevExpress.XtraReports.Parameters.RangeStartParameter();
+            this.parameterDateRange_End = new DevExpress.XtraReports.Parameters.RangeEndParameter();
             ((System.ComponentModel.ISupportInitialize)(this.table1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table3)).BeginInit();
@@ -179,6 +182,18 @@
             this.ReportHeader.Dpi = 96F;
             this.ReportHeader.HeightF = 57.6F;
             this.ReportHeader.Name = "ReportHeader";
+            // 
+            // xrLabel1
+            // 
+            this.xrLabel1.Dpi = 96F;
+            this.xrLabel1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?parameter2")});
+            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(528F, 25.51999F);
+            this.xrLabel1.Multiline = true;
+            this.xrLabel1.Name = "xrLabel1";
+            this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrLabel1.SizeF = new System.Drawing.SizeF(96F, 22.08F);
+            this.xrLabel1.Text = "xrLabel1";
             // 
             // label1
             // 
@@ -672,18 +687,6 @@
             this.parameter1.Type = typeof(int);
             this.parameter1.ValueInfo = "1";
             // 
-            // xrLabel1
-            // 
-            this.xrLabel1.Dpi = 96F;
-            this.xrLabel1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?parameter2")});
-            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(528F, 25.51999F);
-            this.xrLabel1.Multiline = true;
-            this.xrLabel1.Name = "xrLabel1";
-            this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
-            this.xrLabel1.SizeF = new System.Drawing.SizeF(96F, 22.08F);
-            this.xrLabel1.Text = "xrLabel1";
-            // 
             // parameter2
             // 
             this.parameter2.Description = "Parameter2";
@@ -691,7 +694,6 @@
             new DevExpress.XtraReports.Expressions.BasicExpressionBinding("Value", "Now()")});
             this.parameter2.Name = "parameter2";
             this.parameter2.Type = typeof(global::System.DateTime);
-            this.parameter2.ValueInfo = "0";
             // 
             // parameter3
             // 
@@ -716,6 +718,23 @@
             this.parameter5.Name = "parameter5";
             staticListLookUpSettings3.LookUpValues.Add(new DevExpress.XtraReports.Parameters.LookUpValue("None", null));
             this.parameter5.ValueSourceSettings = staticListLookUpSettings3;
+            // 
+            // parameterDateRange
+            // 
+            this.parameterDateRange.Description = "Sample Date Range Parameter";
+            this.parameterDateRange.Name = "parameterDateRange";
+            this.parameterDateRange.Type = typeof(global::System.DateTime);
+            this.parameterDateRange.ValueSourceSettings = new DevExpress.XtraReports.Parameters.RangeParametersSettings(this.parameterDateRange_Start, this.parameterDateRange_End);
+            // 
+            // parameterDateRange_Start
+            // 
+            this.parameterDateRange_Start.Name = "parameterDateRange_Start";
+            this.parameterDateRange_Start.ValueInfo = "2024-01-01";
+            // 
+            // parameterDateRange_End
+            // 
+            this.parameterDateRange_End.Name = "parameterDateRange_End";
+            this.parameterDateRange_End.ValueInfo = "2024-07-01";
             // 
             // TestExportReport
             // 
@@ -744,13 +763,15 @@
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.parameter2, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.parameter3, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.parameter4, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
-            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.parameter5, DevExpress.XtraReports.Parameters.Orientation.Horizontal)});
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.parameter5, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.parameterDateRange, DevExpress.XtraReports.Parameters.Orientation.Horizontal)});
             this.Parameters.AddRange(new DevExpress.XtraReports.Parameters.Parameter[] {
             this.parameter1,
             this.parameter2,
             this.parameter3,
             this.parameter4,
-            this.parameter5});
+            this.parameter5,
+            this.parameterDateRange});
             this.ReportUnit = DevExpress.XtraReports.UI.ReportUnit.Pixels;
             this.RequestParameters = false;
             this.SnapGridSize = 12.5F;
@@ -823,5 +844,8 @@
         private DevExpress.XtraReports.Parameters.Parameter parameter3;
         private DevExpress.XtraReports.Parameters.Parameter parameter4;
         private DevExpress.XtraReports.Parameters.Parameter parameter5;
+        private DevExpress.XtraReports.Parameters.Parameter parameterDateRange;
+        private DevExpress.XtraReports.Parameters.RangeStartParameter parameterDateRange_Start;
+        private DevExpress.XtraReports.Parameters.RangeEndParameter parameterDateRange_End;
     }
 }
