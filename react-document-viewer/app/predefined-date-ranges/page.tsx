@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import ReportViewer, { RequestOptions, Callbacks } from 'devexpress-reporting-react/dx-report-viewer';
-import { predefinedDateRanges } from 'devexpress-reporting/dx-webdocumentviewer'
+import { predefinedDateRanges } from 'devexpress-reporting/viewer/widgets/dateRange/dateRangeEditor.ranges'
 
 
 function App() {

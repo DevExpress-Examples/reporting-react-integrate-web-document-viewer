@@ -3,7 +3,7 @@ import React from 'react';
 import ReportViewer, { Callbacks, DxReportViewerRef, RequestOptions } from 'devexpress-reporting-react/dx-report-viewer';
 
 function App() {
-  const viewerRef = React.useRef<DxReportViewerRef>();
+  const viewerRef = React.useRef<DxReportViewerRef>(null);
   const onDocumentReady = (event: any): void => {
     event.sender.GoToPage(event.args.PageCount - 1);
   };

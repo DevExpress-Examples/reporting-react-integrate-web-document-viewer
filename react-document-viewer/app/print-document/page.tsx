@@ -4,8 +4,8 @@ import ReportViewer, { DxReportViewerRef, RequestOptions } from 'devexpress-repo
 
 
 function App() {
-    const viewerRef = React.useRef<DxReportViewerRef>();
-    const onClick = () => viewerRef.current?.instance().Print();
+    const viewerRef = React.useRef<DxReportViewerRef>(null);
+    const onClick = () => viewerRef.current?.instance().Print(null);
     return (
         <>
             <button onClick={onClick}>Print Document</button>

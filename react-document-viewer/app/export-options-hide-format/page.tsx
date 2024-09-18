@@ -1,6 +1,6 @@
 'use client';
 import ReportViewer, { RequestOptions, Callbacks } from 'devexpress-reporting-react/dx-report-viewer';
-import { ExportFormatID } from 'devexpress-reporting/dx-webdocumentviewer';
+import { ExportFormatID } from 'devexpress-reporting/viewer/constants';
 
 function App() {
   const onCustomizeExportOptions = ({ args }: { args: any }): void => {

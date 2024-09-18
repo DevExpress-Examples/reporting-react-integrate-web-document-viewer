@@ -3,7 +3,7 @@ import React from 'react'
 import ReportViewer, { RequestOptions, DxReportViewerRef } from 'devexpress-reporting-react/dx-report-viewer';
 
 function App() {
-  const viewerRef = React.useRef<DxReportViewerRef>();
+  const viewerRef = React.useRef<DxReportViewerRef>(null);
   const onClick = () => viewerRef.current?.instance().OpenReport("TestExportReport");
 
   return (

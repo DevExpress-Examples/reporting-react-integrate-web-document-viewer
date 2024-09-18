@@ -2,12 +2,13 @@
 import ReportViewer, { Callbacks, DxReportViewerRef, RequestOptions } from 'devexpress-reporting-react/dx-report-viewer';
 
 function App() {
-  const onBeforeRender = ({ args }): void => {
-    args.reportPreview.zoom = 0.25;
-    args.reportPreview.showMultipagePreview = true;
+  const onBeforeRender = (event: { args: any }): void => {
+    const reportPreview = event.args.reportPreview;
+    reportPreview.zoom = 0.25;
+    reportPreview.showMultipagePreview = true;
     console.log("Page load starts...");
     //Subscribe to property change. 
-    args.reportPreview.events.on('propertyChanged', (e) => {
+    reportPreview.events.on('propertyChanged', (e: any) => {
       if (e.propertyName === 'pages') {
         const newValue = e.newValue;
         if (newValue.length > 0) {

@@ -1,10 +1,11 @@
 'use client';
 import React from 'react';
 import ReportViewer, { Callbacks, DxReportViewerRef, RequestOptions } from 'devexpress-reporting-react/dx-report-viewer';
-import { ExportFormatID, AsyncExportApproach } from 'devexpress-reporting/dx-webdocumentviewer'
+import { ExportFormatID } from 'devexpress-reporting/viewer/constants'
+import { AsyncExportApproach } from 'devexpress-reporting/viewer/settings'
 
 function App() {
-  const viewerRef = React.useRef<DxReportViewerRef>();
+  const viewerRef = React.useRef<DxReportViewerRef>(null);
   const onCustomizeExportOptions = (event: any): void => {
     event.args.HideExportOptionsPanel();
     var model = event.args.GetExportOptionsModel(ExportFormatID.XLSX);
@@ -15,7 +16,7 @@ function App() {
   const onBeforeRender = (event: any): void => {
     AsyncExportApproach(true);
   };
-  const exportDocument = () => viewerRef.current?.instance().ExportTo('xlsx');
+  const exportDocument = () => viewerRef.current?.instance().ExportTo('xlsx', true);
   return (
     <>
       <button onClick={exportDocument}>Export to XLSX</button>

@@ -3,7 +3,7 @@ import React from 'react';
 import ReportViewer, { Callbacks, DxReportViewerRef, RequestOptions } from 'devexpress-reporting-react/dx-report-viewer';
 
 function App() {
-  const viewerRef = React.useRef<DxReportViewerRef>();
+  const viewerRef = React.useRef<DxReportViewerRef>(null);
   const getClientParameter = () => {
     var parametersModel = viewerRef.current?.instance().GetParametersModel();
     var parameter5 = parametersModel?.parameters.filter(x => x.path == 'parameter5')[0];
