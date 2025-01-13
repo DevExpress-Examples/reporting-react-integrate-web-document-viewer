@@ -35,7 +35,7 @@ npm run dev
 
 Open your browser and navigate to the URL specified in the command output to see the result. The application displays the Web Document Viewer with the *TestReport* report.
 
-![Document Viewer in JavaScript with React](Images/screenshot.png)
+![Document Viewer in JavaScript with React](images/screenshot.png)
 
 ## Files to Review
 
