@@ -38,7 +38,7 @@ Open your browser and navigate to the URL specified in the command output to see
 
 ## Files to Review
 
-- [page.tsx](react-document-viewer/app/page.tsx)
+- [page.tsx](react-document-viewer/src/App.tsx)
 - [Program.cs](ServerSideApp/ServerSideApp/Program.cs)
 - [ReportingControllers.cs](ServerSideApp/ServerSideApp/Controllers/ReportingControllers.cs)
 
