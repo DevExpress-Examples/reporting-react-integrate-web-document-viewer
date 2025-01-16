@@ -3,7 +3,7 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 [![](https://img.shields.io/badge/💬_Leave_Feedback-feecdd?style=flat-square)](#does-this-example-address-your-development-requirementsobjectives)
 <!-- default badges end -->
-# Reporting for React -  Add a Web Document Viewer to a React App
+# Reporting for React -  Add a Web Document Viewer to a React App (Vite)
 
 This example incorporates the Web Document Viewer into a client-side app built with React. The example consists of two parts:
 
@@ -44,12 +44,14 @@ Open your browser and navigate to the URL specified in the command output to see
 
 ## Documentation
 
-- [Create a React Application with Web Document Viewer](https://docs.devexpress.com/XtraReports/119338)
+- [Create a React Application with Web Document Viewer](https://docs.devexpress.com/XtraReports/405327)
 - [Document Viewer Server-Side Configuration (ASP.NET Core)](https://docs.devexpress.com/XtraReports/400197)
 
 ## More Examples
 
 * [Reporting for React - Integrate Report Designer in React App](https://github.com/DevExpress-Examples/reporting-eud-designer-in-javascript-with-react)
+* [Reporting for React - Customize Parameter Editor in the Web Document Viewer](https://github.com/DevExpress-Examples/reporting-react-customize-parameter-editor)
+* [Reporting for React - Customize Viewer Toolbar](https://github.com/DevExpress-Examples/reporting-react-customize-viewer-toolbar)
 
 <!-- feedback -->
 ## Does this example address your development requirements/objectives?
