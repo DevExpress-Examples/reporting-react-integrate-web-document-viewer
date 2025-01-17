@@ -8,7 +8,7 @@
 
 This example incorporates the Web Document Viewer into a client-side app built with React. The example consists of two parts:
 
-- The [ServerSideApp](ServerApp) folder contains the backend project. The project is an ASP.NET Core application that enables [cross-domain requests (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) (Access-Control-Allow-Origin) and implements custom web report storage.
+- The [ServerApp](ServerApp) folder contains the backend project. The project is an ASP.NET Core application that enables [cross-domain requests (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) (Access-Control-Allow-Origin) and implements custom web report storage.
 
 - The [react-document-viewer](react-document-viewer) folder contains the client application built with React.
 
