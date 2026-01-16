@@ -54,7 +54,7 @@ using(var scope = app.Services.CreateScope()) {
     services.GetService<ReportDbContext>().InitializeDatabase();
 }
 var contentDirectoryAllowRule = DirectoryAccessRule.Allow(new DirectoryInfo(Path.Combine(app.Environment.ContentRootPath, "Content")).FullName);
-AccessSettings.ReportingSpecificResources.TrySetRules(contentDirectoryAllowRule, UrlAccessRule.Allow());
+AccessSettings.ReportingSpecificResources.SetRules(contentDirectoryAllowRule, UrlAccessRule.Deny());
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
